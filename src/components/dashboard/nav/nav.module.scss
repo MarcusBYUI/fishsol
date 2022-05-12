@@ -1,0 +1,98 @@
+.nav {
+  position: absolute;
+  right: 2em;
+  bottom: 2em;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 7.5em;
+  z-index: 1100;
+
+  &_toggle {
+    position: relative;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid #ffffff;
+    width: 6.5em;
+    height: 6.5em;
+    border-radius: 10px;
+    overflow: hidden;
+
+    span {
+      transition: all 0.3s;
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        display: block;
+        width: 2.5em;
+        height: 2px;
+        background-color: #fff;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+
+      &:nth-child(1) {
+        top: 35%;
+      }
+      &:nth-child(2) {
+        top: 50%;
+      }
+      &:nth-child(3) {
+        top: 65%;
+      }
+    }
+  }
+
+  &_list {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid #ffffff;
+    display: flex;
+    align-items: center;
+
+    &_link {
+      font-size: 1.8em;
+      color: #fff;
+      padding: 0.5em 1.5em;
+      cursor: pointer;
+    }
+  }
+}
+
+.tutorial {
+  color: #fff;
+  padding: 1em;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+
+  &_header {
+    align-self: flex-end;
+    cursor: pointer;
+  }
+
+  &_links {
+    padding: 2em 3em;
+    &_item {
+      padding: 1em;
+    }
+  }
+}
+
+.active {
+  span {
+    &:nth-child(1) {
+      top: 50%;
+      transform: rotate(-45deg);
+    }
+    &:nth-child(2) {
+      top: 50%;
+      left: 200%;
+    }
+    &:nth-child(3) {
+      top: 50%;
+      transform: rotate(45deg);
+    }
+  }
+}

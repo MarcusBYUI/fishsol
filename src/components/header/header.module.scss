@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  padding: 7em 7.2em;
+
+  &_logo {
+    width: 10em;
+    height: auto;
+  }
+}
+
+.actions {
+  font-size: 1.6em;
+}
+
+.links {
+  font-size: 1.6em;
+  display: flex;
+  gap: 1em;
+  color: #5e5e5e;
+  &_item {
+    padding: 1.5em 2em;
+  }
+  margin-left: auto;
+  margin-right: 2em;
+}
+
+@media screen and (max-width: 660px) {
+  .header {
+    padding: 3em;
+  }
+
+  .links {
+    margin-right: unset;
+    &_item {
+      padding: 1em 1.2em;
+    }
+  }
+  .actions {
+    display: none;
+  }
+}

@@ -1,0 +1,28 @@
+.bar {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  margin-bottom: 2em;
+  width: 50%;
+  max-width: 45em;
+  padding: 3em 5em;
+  background: linear-gradient(180deg, #fcfcfc 0%, #ffffff 51%, #fcfcfc 100%);
+  border-radius: 5px;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: #ff7a4d;
+    display: block;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 10px;
+  }
+}
+
+.hidden {
+  bottom: -100%;
+}

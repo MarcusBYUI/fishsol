@@ -1,0 +1,25 @@
+.app {
+  background: linear-gradient(
+    270deg,
+    #27ba4f -43.96%,
+    #7dd67b 45.61%,
+    #27ba4f 143.46%
+  );
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+}
+
+.logo {
+  position: absolute;
+  left: 2em;
+  top: 2em;
+  max-width: 14em;
+  height: auto;
+}
+
+.content {
+}

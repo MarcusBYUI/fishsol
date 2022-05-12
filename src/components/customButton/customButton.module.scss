@@ -1,0 +1,27 @@
+button {
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 0.25em;
+  padding: 1em 1.5em;
+}
+
+.btn {
+  background-color: #27ba4f;
+  color: #fff;
+
+  &_warning {
+    background-color: #ffaf31;
+    color: #1d1d1d;
+  }
+
+  &_danger {
+    background-color: #ff7a4d;
+  }
+
+  &_transparent {
+    background-color: transparent;
+    border: 1px solid;
+    color: #1d1d1d;
+  }
+}

@@ -1,0 +1,27 @@
+.message {
+  width: 60%;
+  max-width: 75em;
+  text-align: center;
+  color: #fff;
+  z-index: 1500;
+  background-color: rgba(185, 234, 169, 0.2);
+  border-radius: 5px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding: 3em 4em;
+
+  &_heading {
+    font-size: 2.2em;
+  }
+  &_body {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  &_actions {
+    font-size: 1.6em;
+    color: #fff;
+  }
+}

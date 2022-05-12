@@ -1,0 +1,84 @@
+.wrapper {
+  font-size: 1rem;
+}
+
+.content {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+
+  &_text {
+    display: flex;
+    gap: 2em;
+    margin-bottom: 5em;
+
+    &_main {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+    }
+    &_side {
+      flex: 1;
+    }
+  }
+}
+
+.tags {
+  margin-bottom: 2em;
+  h2 {
+    padding-bottom: 1em;
+  }
+
+  &_list {
+    display: flex;
+    gap: 1em;
+    font-size: 1.6em;
+  }
+}
+
+.social {
+  h2 {
+    padding-bottom: 1em;
+  }
+  &_links {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    &_item {
+      display: flex;
+      gap: 2em;
+    }
+  }
+}
+
+.blogs {
+  margin-bottom: 5em;
+  h2 {
+    padding-bottom: 2em;
+  }
+  &_row {
+    display: flex;
+    gap: 6em;
+  }
+}
+
+.card {
+  background: #fbfbfb;
+  border: 1px solid #c8c8c8;
+  box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+
+  img {
+    width: 100%;
+  }
+  &_text {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+}

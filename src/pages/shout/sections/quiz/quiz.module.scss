@@ -1,0 +1,53 @@
+.quiz {
+  background: #7dd67b;
+  color: #fff;
+  padding-bottom: 10em;
+  font-size: 1rem;
+
+  &_tab {
+    height: 50em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 10em;
+
+    &_main {
+      width: 80em;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      flex: 1;
+    }
+
+    h1 {
+      max-width: 35ch;
+      text-align: center;
+    }
+
+    &_heading {
+      align-self: flex-end;
+      button {
+        border: none;
+        background-color: unset;
+        color: #fff;
+        font-size: 1.6em;
+      }
+    }
+
+    &_body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      margin: 0 auto;
+    }
+
+    &_actions {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

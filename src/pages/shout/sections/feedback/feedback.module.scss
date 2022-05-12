@@ -1,0 +1,63 @@
+.wrapper {
+  font-size: 1rem;
+  position: relative;
+}
+
+.feedback {
+  margin: 4em auto;
+  max-width: 1200px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+
+  &_smudge {
+    position: absolute;
+    z-index: -2;
+    top: -20em;
+    right: 0;
+    width: 50%;
+    max-width: 80em;
+  }
+
+  &_form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6em;
+    color: #635e53;
+
+    &_actions {
+      font-size: 1.6em;
+      align-self: stretch;
+      display: flex;
+
+      button {
+        width: 100%;
+      }
+    }
+
+    input {
+      font-size: 1.6em;
+    }
+  }
+  &_img {
+    flex: 1;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .feedback {
+    flex-direction: column-reverse;
+
+    &_form {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

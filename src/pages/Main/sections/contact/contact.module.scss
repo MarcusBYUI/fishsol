@@ -1,0 +1,80 @@
+.wrapper {
+  background-color: #7dd67b;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact {
+  width: 80%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  font-size: 1rem;
+  gap: 4em;
+  padding: 0 2em 8em;
+
+  & > * {
+    flex: 1;
+  }
+
+  &_img {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &_form {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    justify-content: center;
+    align-items: stretch;
+    padding: 1em;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1.6em;
+}
+
+.row {
+  display: flex;
+  gap: 1.6em;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact {
+    &_img {
+      position: absolute;
+      right: 0%;
+      top: 0%;
+      transform: translateX(50%);
+      width: 50%;
+      height: auto;
+      z-index: 0;
+    }
+
+    &_form {
+      padding: 3em;
+      max-width: 50em;
+      margin: 0 auto;
+      z-index: 10;
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .contact_form {
+    padding: 5em 2em;
+    h2 {
+      max-width: 15ch;
+      font-weight: regular;
+      font-family: "Poppins";
+    }
+  }
+}
